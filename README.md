@@ -57,9 +57,9 @@ pip install -r requirements.txt
 Create a PostgreSQL database and user:
 
 ```sql
-CREATE DATABASE ftp_db;
-CREATE USER ftp_user WITH PASSWORD '123456';
-GRANT ALL PRIVILEGES ON DATABASE ftp_db TO ftp_user;
+CREATE DATABASE your_database;
+CREATE USER your_username WITH PASSWORD '123456';
+GRANT ALL PRIVILEGES ON DATABASE your_database TO your_username;
 ```
 
 ### 4. Configure Database Connection
@@ -70,8 +70,8 @@ Edit `db_config.json` with your database credentials:
 {
     "host": "localhost",
     "port": 5432,
-    "database": "ftp_db",
-    "username": "ftp_user",
+    "database": "your_database",
+    "username": "your_username",
     "password": "123456"
 }
 ```
@@ -107,7 +107,7 @@ psycopg2-binary>=2.9.5
 
 1. Go to **Settings > Station Settings**
 2. Select a server from the dropdown
-3. Enter station ID (e.g., `TSET0009`, `QSRA0004`)
+3. Enter station ID (e.g., `STATION1`, `STATION2`)
 4. Click **Add Station**
 
 ### Selecting Servers for Download
@@ -180,11 +180,11 @@ LocalFolder/
 **Example:**
 ```
 C:/Downloads/
-└── TSET0009/
+└── STATION1/
     └── 18112025_20112025/
-        ├── TSET0009251118170000.txt
-        ├── TSET0009251119170000.txt
-        └── TSET0009251120170000.txt
+        ├── STATION1251118170000.txt
+        ├── STATION1251119170000.txt
+        └── STATION1251120170000.txt
 ```
 
 ## 🔧 Configuration
@@ -208,13 +208,13 @@ The application automatically adjusts thread count based on file count:
 The application supports the following filename patterns:
 
 1. **Standard format**: `STATIONID` + `YYMMDDHHMMSS` + `.txt`
-   - Example: `QSRA0004251118104500.txt`
-   - Station: `QSRA0004`
+   - Example: `STATION1251118104500.txt`
+   - Station: `STATION1`
    - Date/Time: `2025-11-18 10:45:00`
 
 2. **Extended format**: `STATIONID` + `YYMMDDHHMMSS` + `_` + timestamp + `.txt`
-   - Example: `TSET0013RF251108170000_20251108170535.txt`
-   - Station: `TSET0013RF`
+   - Example: `STATION1RF251108170000_20251108170535.txt`
+   - Station: `STATION1RF`
    - Date/Time: `2025-11-08 17:00:00`
 
 ### Remote Path Detection
@@ -311,7 +311,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, issues, or suggestions:
 - Create an issue on GitHub
-- Email: your.email@example.com
+- Email: ainamhmdd@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -321,4 +321,4 @@ For questions, issues, or suggestions:
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by [Aina Mahmod]**
