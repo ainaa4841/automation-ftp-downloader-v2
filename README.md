@@ -321,4 +321,4 @@ For questions, issues, or suggestions:
 
 ---
 
-**Made with ❤️ by [Aina Mahmod]**
+**Made with ❤️ by Aina Mahmod**
